@@ -1438,3 +1438,40 @@ section {
 .resume-item ul li {
   padding-bottom: 8px;
 }
+/* Enhanced Client Highlighting */
+.client-highlight-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa; /* Light grey background to box the client name */
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 4px solid #1f5297;
+  margin-bottom: 8px;
+}
+
+.client-brand {
+  font-size: 16px;
+  font-weight: 800; /* Extra Bold */
+  letter-spacing: 1px;
+  color: #1f5297; /* Your primary blue theme color */
+  text-transform: uppercase;
+}
+
+.job-title-alt {
+  font-size: 18px;
+  font-weight: 700;
+  color: #050d18;
+  margin: 10px 0 5px 12px;
+}
+
+.role-date {
+  font-size: 13px;
+  color: #68718a;
+  font-weight: 600;
+}
+
+.resume-item ul {
+  list-style: square;
+  color: #272829;
+}
