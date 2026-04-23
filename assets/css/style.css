@@ -1346,3 +1346,34 @@ section {
   vertical-align: middle;
   margin-right: 4px;
 }
+/* Force uniform grid layout */
+.portfolio-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  height: auto !important; /* Overrides the script-calculated height */
+}
+
+.portfolio-item {
+  position: static !important; /* Disables the 'shabby' masonry stacking */
+  display: flex;
+  align-items: stretch; /* Makes all items in a row the same height */
+}
+
+.portfolio-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* This makes the description area expand to fill the empty space */
+.portfolio-info {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensures the links always stay at the very bottom of the card */
+.portfolio-links {
+  margin-top: auto; 
+}
